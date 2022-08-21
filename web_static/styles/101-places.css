@@ -2,8 +2,6 @@
 
 .places{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
 .places h1 {
@@ -28,7 +26,7 @@ section article {
 .places article > div{
     display: flex;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     alignment: top;
     margin-left: 10px;
     margin-right: 10px;
@@ -108,7 +106,6 @@ section article {
 
 .user{
     text-align: left;
-    margin: 0;
 }
 
 .user > strong{
@@ -118,4 +115,55 @@ section article {
 .description{
     margin: 0;
     text-align: left;
+}
+
+/* Amenites */
+.places article > .amenities, .places article > .reviews {
+    display: block;
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+article > .amenities h2, article> .reviews h2{
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+article> .reviews h3{
+    font-size: 14px;
+}
+
+article> .reviews p{
+    font-size: 12px;
+}
+
+
+article > .amenities ul, .reviews ul{
+    list-style: none;
+    text-align: left;
+    margin-left: 0;
+    padding-inline-start: 0;
+}
+
+.icon_pet, .icon_tv, .icon_wifi{
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: left;
+    padding-left: 30px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.icon_pet{
+    background-image: url("../images/icon_pets.png");
+}
+
+.icon_tv{
+    background-image: url("../images/icon_tv.png");
+}
+
+.icon_wifi{
+    background-image: url("../images/icon_wifi.png");
 }
